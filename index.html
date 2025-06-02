@@ -1,70 +1,10 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body> -->
-<!-- <header class="weather-header">
-        <h1>Weatherly</h1>
-        <p class="tagline">Your daily sky insight</p>
-    </header> -->
-<!-- <header class="weather-header">
-        <div class="header-content">
-            <div class="logo">
-                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Icon" />
-                <h1>Weather<i>Whiz</i></h1>
-            </div>
-            <p class="tagline">Your daily sky insight</p>
-            <div class="header-extras">
-                <button id="toggle-theme" aria-label="Toggle light/dark mode">🌙</button>
-                <div id="current-datetime"></div> -->
-<!-- <div class="powered-by">Powered by WeatherAPI</div> -->
-<!-- </div>
-        </div>
-    </header>
-
-    <div class="bigcontainer">
-
-        <nav>
-            <form>
-                <input type="text" placeholder="Enter city, country (e.g-Delhi, India)" class="search">
-                <button type="submit" class="searchbutton">Search</button>
-            </form>
-
-        </nav>
-        <div class="container">
-            <div class="temp">
-                <p>20</p>
-            </div>
-            <div class="loc_time">
-                <p>Delhi</p>
-                <span>12:00 - Sunday 2025-09-02</span>
-            </div>
-
-            <div class="weather">
-
-                <p>Rainy</p>
-            </div>
-        </div>
-    </div>
-
-</body>
-<script src="script.js"></script>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Weather App</title>
+    <title>WeatherWhiz</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -80,7 +20,6 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Icon" />
                     <h1>Weather<i>Whiz</i></h1>
                 </div>
-                <p class="tagline">Your daily sky insight</p>
             </div>
 
             <div class="header-right">
@@ -89,32 +28,77 @@
         </div>
     </header>
 
-
     <main class="bigcontainer">
         <nav>
-            <form>
-                <input type="text" placeholder="Enter city, country (e.g- Delhi, India)" class="search"
-                    aria-label="Search location" />
-                <button type="submit" class="searchbutton">Search</button>
-            </form>
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="(e.g- Delhi, India)" class="search" aria-label="Search location" />
+                    <button type="submit" class="searchbutton">Search</button>
+                </form>
+                <button id="detect-location">📍 Detect My Location</button>
+            </div>
         </nav>
 
         <section class="container" aria-live="polite" aria-atomic="true">
-            <div class="temp" aria-label="Temperature">
-                <img id="weather-icon" alt="weather icon" />
-                <span id="temp-value" class="temp-value"></span>°C
-            </div>
-            <div class="loc_time">
-                <p>Delhi</p>
-                <span>12:00 - Sunday 2025-09-02</span>
-            </div>
-            <div class="weather" aria-label="Weather condition">
-                <p>Rainy</p>
-            </div>
+            <div class="weather-forecast-wrapper">
+                <!-- Weather Box + City Image -->
+                <div class="weather-image-wrapper">
+                    <!-- Weather Box -->
+                    <div class="weather-box">
+                        <div class="temp" aria-label="Temperature">
+                            <img id="weather-icon" alt="weather icon" />
+                            <span id="temp-value" class="temp-value"></span>°C
+                        </div>
+                        <div class="loc_time">
+                            <p id="location-name">Delhi</p>
+                            <span id="date-time">12:00 - Sunday 2025-09-02</span>
+                        </div>
+                        <div class="weather" aria-label="Weather condition">
+                            <p id="weather-description">Rainy</p>
+                        </div>
+                    </div>
 
+                    <!-- Image Box -->
+                    <div class="image-box">
+                        <img id="city-image" src="" alt="City Image" />
+                    </div>
+                </div>
+
+                <!-- Forecast Cards -->
+                <div class="forecast-container">
+                    <div class="forecast-card">
+                        <p>Mon</p>
+                        <img src="https://openweathermap.org/img/wn/10d.png" alt="Weather Icon" />
+                        <p>34°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p>Tue</p>
+                        <img src="https://openweathermap.org/img/wn/01d.png" alt="Weather Icon" />
+                        <p>36°C</p>
+                    </div>
+                    <!-- <div class="forecast-card">
+                        <p>Wed</p>
+                        <img src="https://openweathermap.org/img/wn/02d.png" alt="Weather Icon" />
+                        <p>35°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p>Thu</p>
+                        <img src="https://openweathermap.org/img/wn/03d.png" alt="Weather Icon" />
+                        <p>33°C</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p>Fri</p>
+                        <img src="https://openweathermap.org/img/wn/09d.png" alt="Weather Icon" />
+                        <p>32°C</p>
+                    </div> -->
+                </div>
+            </div>
         </section>
     </main>
 
+    <section>
+
+    </section>
     <script src="script.js"></script>
 </body>
 
