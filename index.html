@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> -->
+<!-- <header class="weather-header">
+        <h1>Weatherly</h1>
+        <p class="tagline">Your daily sky insight</p>
+    </header> -->
+<!-- <header class="weather-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Icon" />
+                <h1>Weather<i>Whiz</i></h1>
+            </div>
+            <p class="tagline">Your daily sky insight</p>
+            <div class="header-extras">
+                <button id="toggle-theme" aria-label="Toggle light/dark mode">🌙</button>
+                <div id="current-datetime"></div> -->
+<!-- <div class="powered-by">Powered by WeatherAPI</div> -->
+<!-- </div>
+        </div>
+    </header>
+
+    <div class="bigcontainer">
+
+        <nav>
+            <form>
+                <input type="text" placeholder="Enter city, country (e.g-Delhi, India)" class="search">
+                <button type="submit" class="searchbutton">Search</button>
+            </form>
+
+        </nav>
+        <div class="container">
+            <div class="temp">
+                <p>20</p>
+            </div>
+            <div class="loc_time">
+                <p>Delhi</p>
+                <span>12:00 - Sunday 2025-09-02</span>
+            </div>
+
+            <div class="weather">
+
+                <p>Rainy</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="weather-header">
+        <div class="header-content">
+            <div class="header-left">
+                <div id="current-datetime"></div>
+            </div>
+
+            <div class="header-center">
+                <div class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Icon" />
+                    <h1>Weather<i>Whiz</i></h1>
+                </div>
+                <p class="tagline">Your daily sky insight</p>
+            </div>
+
+            <div class="header-right">
+                <button id="toggle-theme" aria-label="Toggle light/dark mode">Switch Mode 🌙</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="bigcontainer">
+        <nav>
+            <form>
+                <input type="text" placeholder="Enter city, country (e.g- Delhi, India)" class="search"
+                    aria-label="Search location" />
+                <button type="submit" class="searchbutton">Search</button>
+            </form>
+        </nav>
+
+        <section class="container" aria-live="polite" aria-atomic="true">
+            <div class="temp" aria-label="Temperature">
+                <img id="weather-icon" alt="weather icon" />
+                <span id="temp-value" class="temp-value"></span>°C
+            </div>
+            <div class="loc_time">
+                <p>Delhi</p>
+                <span>12:00 - Sunday 2025-09-02</span>
+            </div>
+            <div class="weather" aria-label="Weather condition">
+                <p>Rainy</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
